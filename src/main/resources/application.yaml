@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: icm-tracing
+  temporal:
+    namespace: default
+    connection:
+      target: ${TEMPORAL_ADDRESS:127.0.0.1:7233}
+    workers-auto-discovery:
+      packages:
+        - click.yinsb.icmtracing.temporal.workflow
+        - click.yinsb.icmtracing.temporal.activities

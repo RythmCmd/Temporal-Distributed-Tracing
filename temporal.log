@@ -1,0 +1,7 @@
+Temporal CLI 1.6.1 (Server 1.30.1, UI 2.45.3)
+
+Temporal Server:  localhost:7233
+Temporal UI:      http://localhost:8233
+Temporal Metrics: http://localhost:64701/metrics
+time=2026-03-09T17:30:20.374 level=ERROR msg="Persistent store operation failure" component=matching-engine wf-task-queue-name=/_sys/default-worker-tq/1 wf-task-queue-type=Workflow wf-namespace=temporal-system worker-version=_unversioned_ backlog=classic store-operation=update-task-queue error="context canceled"
+time=2026-03-09T17:33:20.370 level=ERROR msg="Persistent store operation failure" component=matching-engine wf-task-queue-name=/_sys/temporal-sys-processor-parent-close-policy/2 wf-task-queue-type=Workflow wf-namespace=temporal-system worker-version=_unversioned_ backlog=classic store-operation=update-task-queue error="context canceled"

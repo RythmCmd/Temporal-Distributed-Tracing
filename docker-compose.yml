@@ -1,0 +1,22 @@
+services:
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.127.0
+    ports:
+      - "4317:4317"   # OTLP gRPC receiver
+      - "4318:4318"   # OTLP HTTP
+    environment:
+      - NR_ENDPOINT
+      - MY_NEW_RELIC_API_KEY
+    volumes:
+      - ./otel-collector.yml:/etc/otelcol-contrib/config.yaml
+    command: [ "--config=/etc/otelcol-contrib/config.yaml" ]
+    depends_on:
+      jaeger:
+        condition: service_started
+
+  jaeger:
+    image: jaegertracing/jaeger:2.13.0
+    ports:
+      - "16686:16686"  # Jaeger UI
+      - "14250:14250"  # Jaeger gRPC (receives trace from collector)
+      - "6831:6831/udp" # Jaeger UDP (optional)
