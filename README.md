@@ -1,6 +1,6 @@
 # Temporal OTel Heartbeat Tracing Example
 
-This repository contains a working, fully-configured Temporal application designed to demonstrate how to emit **OpenTelemetry Heartbeat Spans**. 
+This repository contains a working, Temporal application designed to demonstrate how to emit OpenTelemetry Heartbeat Spans. 
 
 This solves the issue where New Relic splits or drops distributed traces for Temporal workflows when a single Activity exceeds New Relic's 90-second span limit guardrail.
 
