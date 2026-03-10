@@ -21,7 +21,7 @@ public class OtelConfig {
         OpenTelemetry openTelemetry() {
                 Resource resource = Resource.getDefault()
                                 .merge(Resource.create(Attributes.of(AttributeKey.stringKey("service.name"),
-                                                "multi-span")));
+                                                "multi-span-dt")));
 
                 String endpoint = System.getenv("NR_ENDPOINT");
                 if (endpoint == null || endpoint.isEmpty()) {
