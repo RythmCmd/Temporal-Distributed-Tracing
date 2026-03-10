@@ -76,7 +76,7 @@ echo " Triggering Temporal Workflow tracing..."
 echo "=========================================="
 
 # Trigger the workflow
-curl -X POST "http://localhost:8080/hello?id=123&type=test"
+curl -X POST "http://localhost:8081/hello?id=123&type=test"
 
 echo ""
 echo "Workflow triggered successfully."

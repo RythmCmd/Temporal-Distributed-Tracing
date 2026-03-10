@@ -28,7 +28,7 @@ This solves the issue where New Relic splits or drops distributed traces for Tem
 
 The script will automatically start the Temporal Development Server (if it's not already running) and then:
 1. Compile the Spring Boot Temporal application.
-2. Start the Temporal Workers and REST API on port `8080`.
+2. Start the Temporal Workers and REST API on port `8081`.
 3. Automatically trigger the `/hello` endpoint to kick off the long-running 130-second Temporal workflow.
 4. Stream the Spring Boot logs to your terminal so you can watch the trace IDs and the 60-second heartbeats fire.
 
