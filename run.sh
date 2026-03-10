@@ -5,7 +5,7 @@
 # ==========================================
 
 # 1. Provide your New Relic API Key
-export MY_NEW_RELIC_API_KEY="dcf7ef9a8288753044772e9d5a7f3223FFFFNRAL"
+export MY_NEW_RELIC_API_KEY="NR-Ingest-API-KEY"
 export NR_ENDPOINT="https://otlp.nr-data.net:4317"
 
 if [ "$MY_NEW_RELIC_API_KEY" = "REPLACE_WITH_YOUR_NEW_RELIC_API_KEY" ]; then
